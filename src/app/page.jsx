@@ -45,8 +45,8 @@ const Container = () => {
   const toggleComplete = (id) => {
     setRenderInput(
       renderInput.map((item) =>
-        item.id === id ? { ...item, isComplete: !item.isComplete } : item
-      )
+        item.id === id ? { ...item, isComplete: !item.isComplete } : item,
+      ),
     );
   };
   const deleteItem = (id) => {
@@ -54,7 +54,7 @@ const Container = () => {
   };
 
   return (
-    <div className="p-8 w-120 min-h-43.5 flex flex-col items-center shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+    <div className="p-8 w-120 min-h-43.5 flex flex-col items-center shadow-[0_3px_10px_rgb(0,0,0,0.2)] mt-[121.5px] hover:shadow-2xl transition duration-300 ease-in">
       <h1 className="text-[25px] text-gray-900 tracking-wider mb-6">
         Grocery Bud
       </h1>
